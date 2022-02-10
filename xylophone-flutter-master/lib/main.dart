@@ -1,5 +1,6 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
+import 'package:korean_words/korean_words.dart';
 
 void main() => runApp(XylophoneApp());
 
@@ -29,6 +30,7 @@ class XylophoneApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    generateKoreanWords(wordCount: 4).take(20).forEach(print);
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black,
